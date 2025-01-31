@@ -101,10 +101,160 @@
 
 
         <!-- hero section -->
-        <section class="max-w-screen-xl mx-auto">
-            
+        <section class="max-w-screen-xl mx-auto sm:min-h-screen">
+            <div class="md:py-20 py-8 relative">
+                <!-- hero title -->
+                <div class=" md:w-2/3 lg:w-1/2 p-4 z-0">
+                    <h2 class="adlam-regular text-3xl md:text-5xl mb-2 md:mb-4">
+                        Pamper Your Pet,<br> Because They Deserve <br> the Bes
+                    </h2>
+                    <p class="text-base md:text-lg text-stone-700 mb-3 md:mb-4">Discover a world of treats, toys, and
+                        essentials handpicked for your furry friends. Shop now and
+                        make tails wag with joy!</p>
+                    <button class="text-lg bg-yellow text-black px-5 py-2 rounded-lg">Find a pet </button>
+                </div>
+                <!-- hero picture -->
+                <div class="w-11/12 absolute left-2 md:left-10 top-52 md:top-16 -z-10">
+                    <img src="./c1-assets/cat-big.png" alt="">
+                </div>
+            </div>
+
         </section>
     </header>
+
+    <main>
+        <!-- categories -->
+        <section class="max-w-screen-xl mx-auto mt-32 md:mb-24 px-4">
+            <h1 class="adlam-regular text-2xl md:text-3xl pb-12">Browse By Categories</h1>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <!-- categories-01 -->
+                <div class="flex  text-center">
+                    <div class="bg-[rgb(249,223,138)] px-12 py-8 rounded-xl">
+                        <img class="bg-white p-5 rounded-full" src="./c1-assets/dog-cartoon.png" alt="">
+                        <h3 class="mt-6 mb-3 adlam-regular text-xl">Dog</h3>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- categories-02 -->
+                <div class="flex  text-center">
+                    <div class="bg-[rgb(249,223,138)] px-12 py-8 rounded-xl">
+                        <img class="bg-white p-5 rounded-full" src="./c1-assets/fish-cartoon.png" alt="">
+                        <h3 class="mt-6 mb-3 adlam-regular text-xl">Fish</h3>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- categories-03 -->
+                <div class="flex  text-center">
+                    <div class="bg-[rgb(249,223,138)] px-12 py-8 rounded-xl">
+                        <img class="bg-white p-5 rounded-full" src="./c1-assets/cat-cartoon.png" alt="">
+                        <h3 class="mt-6 mb-3 adlam-regular text-xl">Cat</h3>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- categories-04 -->
+                <div class="flex  text-center">
+                    <div class="bg-[rgb(249,223,138)] px-12 py-8 rounded-xl">
+                        <img class="bg-white p-5 rounded-full" src="./c1-assets/bird-cartoon.png" alt="">
+                        <h3 class="mt-6 mb-3 adlam-regular text-xl">Birds</h3>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- categories-05 -->
+                <div class="flex  text-center">
+                    <div class="bg-[rgb(249,223,138)] px-12 py-8 rounded-xl">
+                        <img class="bg-white p-5 rounded-full" src="./c1-assets/mouse-cartoon.png" alt="">
+                        <h3 class="mt-6 mb-3 adlam-regular text-xl">Pets</h3>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- categories-06 -->
+                <div class="flex  text-center">
+                    <div class="bg-[rgb(249,223,138)] px-12 py-8 rounded-xl">
+                        <img class="bg-white p-5 rounded-full" src="./c1-assets/rabbit-cartoon.png" alt="">
+                        <h3 class="mt-6 mb-3 adlam-regular text-xl">Rabbit</h3>
+                        <p>2 items</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- self made -->
+        <section class="max-w-screen-xl mx-auto md:mb-24 mt-8 px-4">
+            <h2 class="text-3xl adlam-regular mb-6">Our new collection</h2>
+            <!-- Carousel -->
+            <div class="carousel w-full  bg-rose-50">
+                <!-- Slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row md:gap-24 p-12 lg:p-24  lg:items-center">
+                        <!-- text-->
+                        <div class="space-y-7 flex-1 lg:pl-8">
+                            <h1 class="text-4xl adlam-regular">Gray Cat</h1>
+                           <ul class="list-disc list-inside">
+                            <li class="text-xl">Likely British Short hair</li>
+                            <li class="text-xl">Kitten development changes rapidly</li>
+                            <li class="text-xl">Adult coat and features emerge</li>
+                            <li class="text-xl">Temperament may further develop</li>
+                           </ul>
+                        </div>
+                        <!-- image -->
+                        <div class="flex-1">
+                            <img src="./c1-assets/slider1.png" class="w-[450px]" />
+                        </div>
+                    </div>
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="hover:bg-slate-100 p-5 rounded-full">❮</a>
+                        <a href="#slide2" class="hover:bg-slate-100 p-5 rounded-full">❯</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row md:gap-24 p-12 lg:p-24  lg:items-center">
+                        <!-- text-->
+                        <div class="space-y-7 flex-1 lg:pl-8">
+                            <h1 class="text-4xl adlam-regular">Solstice Cat</h1>
+                           <ul class="list-disc list-inside">
+                            <li class="text-xl">Striking ginger tabby coat</li>
+                            <li class="text-xl">Relaxed, confident posture</li>
+                            <li class="text-xl">Clearly enjoys lounging</li>
+                            <li class="text-xl">Possibly a pampered pet</li>
+                           </ul>
+                        </div>
+                        <!-- image -->
+                        <div class="flex-1">
+                            <img src="./c1-assets/slider2.png" class="w-[450px]" />
+                        </div>
+                    </div>
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="hover:bg-slate-100 p-5 rounded-full">❮</a>
+                        <a href="#slide3" class="hover:bg-slate-100 p-5 rounded-full">❯</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="flex flex-col lg:flex-row md:gap-24 p-12 lg:p-24  lg:items-center">
+                        <!-- text-->
+                        <div class="space-y-7 flex-1 lg:pl-8">
+                            <h1 class="text-4xl adlam-regular">Marmalade Cat</h1>
+                           <ul class="list-disc list-inside">
+                            <li class="text-xl">Orange tabby with white</li>
+                            <li class="text-xl">Kitten development changes rapidly</li>
+                            <li class="text-xl">Alert, attentive expression</li>
+                            <li class="text-xl">Appears to be medium-sized</li>
+                           </ul>
+                        </div>
+                        <!-- image -->
+                        <div class="flex-1">
+                            <img src="./c1-assets/slider3.png" class="w-[450px]" />
+                        </div>
+                    </div>
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="hover:bg-slate-100 p-5 rounded-full">❮</a>
+                        <a href="#slide1" class="hover:bg-slate-100 p-5 rounded-full">❯</a>
+                    </div>
+                </div>
+        </section>
+        
+    </main>
 </body>
 
 </html>
