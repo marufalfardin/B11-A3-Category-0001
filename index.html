@@ -5,16 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pampered Paws</title>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="c1-assets/logo-header.png" type="image/x-icon">
+    <!-- tailwind css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/0f5a6fc1df.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="c1-assets/logo-header.png" type="image/x-icon">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .adlam-regular {
+            font-family: "ADLaM Display", serif;
+        }
+
+        .sora-regular {
+            font-family: "Sora", serif;
+        }
+    </style>
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#3498DB',
+                        yellow: '#FFDC26',
                     }
                 }
             }
@@ -22,8 +41,70 @@
     </script>
 </head>
 
-<body>
+<body class="sora-regular">
+    <header>
+        <!-- nav bar -->
+        <nav>
+            <div
+                class="navbar bg-rose-50 flex justify-between  border-b-2 border-b-slate-400 md:border-b-0 pl-4 md:px-16 lg:px-32">
+                <!-- div-1 -->
+                <div class="flex flex-1 gap-2">
+                    <img src="./c1-assets/logo-header.png" alt="Paws">
+                    <h3 class="text-2xl hidden md:inline">Browse<span class="text-yellow">4</span>Pets
+                    </h3>
+                </div>
+                <!-- div-2 -->
+                <div class="hidden flex-1 md:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-lg"><a>Find a pet</a></li>
+                        <li class="text-lg"><a>Breeds</a></li>
+                        <li class="text-lg"><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <!-- div-3 -->
+                <div class="hidden md:flex md:gap-3">
+                    <i class="fa-solid fa-bell md:mr-3"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="text-lg border border-yellow text-black px-5 py-2 rounded-lg">Login</button>
+                    <button class="text-lg bg-yellow text-black px-5 py-2 rounded-lg">Register</button>
+                </div>
+                <!-- dropdown section -->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
 
+                        <i class="fa-solid fa-bars"> </i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-rose-50 rounded-box z-[1] mt-3 w-52 p-2 shadow right-1">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                        <li>
+                            <a>User Panel</a>
+                            <ul class="p-2 bg-stone-50">
+                                <li><button class="hover:bg-rose-50">Login</button></li>
+                                <li><button class="hover:bg-rose-50">Register</button></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Quick Access</a>
+                            <ul class="p-2 bg-stone-50">
+                                <li><a class="hover:bg-rose-50"><i class="fa-solid fa-bell"></i>Notification</a></li>
+                                <li><a class="hover:bg-rose-50"><i
+                                            class="fa-solid fa-magnifying-glass rotate-90"></i>Search web</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- hero section -->
+        <section class="max-w-screen-xl mx-auto">
+            
+        </section>
+    </header>
 </body>
 
 </html>
